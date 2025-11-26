@@ -18,7 +18,7 @@ export default async function LocaleLayout({ children, params }: any) {
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
           <Link href={`/${p.locale}`} className="text-lg font-semibold">Portfolio</Link>
-          <nav className="flex items-center gap-6 text-sm">
+          <nav className="ml-auto flex flex-wrap items-center justify-end gap-3 text-sm sm:gap-6">
             <Link href={`/${p.locale}/projects`} className="hover:opacity-80">{m.projectsTitle}</Link>
             <Link href={`/${p.locale}/#skills`} className="hover:opacity-80">{m.skillsTitle}</Link>
             <Link href={`/${p.locale}/contact`} className="hover:opacity-80">{m.contactNav}</Link>
